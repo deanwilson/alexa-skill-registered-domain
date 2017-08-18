@@ -1,0 +1,20 @@
+# Welcome to Serverless!
+
+service: domain-name-check
+
+provider:
+  name: aws
+  # using 3.5 for development as I don't have 3.6 locally
+  runtime: python3.5
+  region: eu-west-1
+
+plugins:
+  - serverless-python-requirements
+
+functions:
+  registeredDomain:
+    runtime: python3.6
+    handler: handler.alexa_handler
+    description: 'Check if a given domain name is available or already taken.'
+    events:
+      - alexaSkill
