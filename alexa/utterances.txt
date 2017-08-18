@@ -1,0 +1,4 @@
+RegisteredDomain is {DomainName} registered
+RegisteredDomain is {DomainName} available
+RegisteredDomain if {DomainName} is available
+RegisteredDomain if {DomainName} is registered
